@@ -1,7 +1,81 @@
-<html>
-  <head>
-    <center>
-    <h1>bohahah</h1>
-  </center>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CKLyte - Projects Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background: #0f0f0f; color: #f0f0f0; }
+        header { background: #1f1f1f; padding: 20px; text-align: center; }
+        header h1 { font-size: 2.5rem; color: #ff6f61; }
+        nav { margin-top: 10px; }
+        nav a { color: #f0f0f0; margin: 0 15px; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        nav a:hover { color: #ff6f61; }
+
+        .hero { padding: 80px 20px; text-align: center; background: linear-gradient(to right, #ff6f61, #ffb88c); color: #fff; }
+        .hero h2 { font-size: 2rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 40px 20px; }
+        .project { background: #1f1f1f; padding: 20px; border-radius: 10px; transition: transform 0.3s, box-shadow 0.3s; }
+        .project:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255,111,97,0.4); }
+        .project h3 { margin-bottom: 10px; color: #ff6f61; }
+        .project p { font-size: 0.95rem; color: #ccc; }
+        .project a { display: inline-block; margin-top: 10px; color: #ffb88c; text-decoration: none; font-weight: bold; }
+        .project a:hover { color: #ff6f61; }
+
+        footer { text-align: center; padding: 20px; background: #1f1f1f; font-size: 0.9rem; color: #888; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CKLyte</h1>
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to CKLyte</h2>
+        <p>Showcasing my coding, game, and software projects. Explore my work and see what I’m building!</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="project">
+            <h3>The ShadeBorn</h3>
+            <p>A top-down horror shooter game developed in GDevelop. Experience the thrill and uncover the story of John and the Shadow Man.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <h3>A Few Shifts at Dready's</h3>
+            <p>A FNaF-inspired fan game featuring custom animatronics and unique gameplay mechanics.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <h3>OpenDoc</h3>
+            <p>An online text editing tool with rich formatting, autosave, export options, and dark mode support.</p>
+            <a href="#">View Project</a>
+        </div>
+        <!-- Add more projects here -->
+    </section>
+
+    <section id="about" style="padding: 40px 20px; text-align:center;">
+        <h2>About CKLyte</h2>
+        <p>I’m a developer creating games, software, and web projects. CKLyte is my space to showcase everything I build and share my progress with the world.</p>
+    </section>
+
+    <section id="contact" style="padding: 40px 20px; text-align:center;">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:hello@cklyte.com" style="color:#ff6f61;">hello@cklyte.com</a></p>
+        <p>Discord: <span style="color:#ff6f61;">YourUsername#1234</span></p>
+    </section>
+
+    <footer>
+        &copy; 2025 CKLyte. All Rights Reserved.
+    </footer>
+</body>
 </html>
